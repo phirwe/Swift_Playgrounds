@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		9C30ECF525D07C540038EB7B /* LRUCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C30ECEB25D07C530038EB7B /* LRUCache.framework */; };
 		9C30ECFA25D07C540038EB7B /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */; };
-		9C30ECFC25D07C540038EB7B /* LRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C30ECEE25D07C530038EB7B /* LRUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416D925D07D3F00171B49 /* LRUCache.swift */; };
+		9CC416DE25D07D9000171B49 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416DD25D07D9000171B49 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,12 @@
 
 /* Begin PBXFileReference section */
 		9C30ECEB25D07C530038EB7B /* LRUCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LRUCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C30ECEE25D07C530038EB7B /* LRUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
 		9C30ECEF25D07C530038EB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C30ECF425D07C530038EB7B /* LRUCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRUCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
 		9C30ECFB25D07C540038EB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC416D925D07D3F00171B49 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		9CC416DD25D07D9000171B49 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		9C30ECED25D07C530038EB7B /* LRUCache */ = {
 			isa = PBXGroup;
 			children = (
-				9C30ECEE25D07C530038EB7B /* LRUCache.h */,
+				9CC416D925D07D3F00171B49 /* LRUCache.swift */,
 				9C30ECEF25D07C530038EB7B /* Info.plist */,
+				9CC416DD25D07D9000171B49 /* Node.swift */,
 			);
 			path = LRUCache;
 			sourceTree = "<group>";
@@ -93,7 +96,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C30ECFC25D07C540038EB7B /* LRUCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 				TargetAttributes = {
 					9C30ECEA25D07C530038EB7B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					9C30ECF325D07C530038EB7B = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */,
+				9CC416DE25D07D9000171B49 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		9C30ED0025D07C540038EB7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.workday.LRUCache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		9C30ED0125D07C540038EB7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		9C30ED0325D07C540038EB7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LRUCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		9C30ED0425D07C540038EB7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LRUCacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
