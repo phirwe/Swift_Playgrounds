@@ -21,12 +21,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C50178C25D0D0E000DA3FD1 /* LRUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LRUCache; path = Cache/LRUCache; sourceTree = "<group>"; };
+		9C50178F25D0D0EF00DA3FD1 /* LFUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LFUCache; path = Cache/LFUCache; sourceTree = "<group>"; };
 		9C6F981425D0C86E008E4E47 /* Cache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F981825D0C86E008E4E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F981D25D0C86E008E4E47 /* CacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F982425D0C86E008E4E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C6F983025D0C89C008E4E47 /* LRUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LRUCache; sourceTree = "<group>"; };
-		9C6F983325D0C8B4008E4E47 /* LFUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LFUCache; path = Cache/LFUCache; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 		9C6F980A25D0C86E008E4E47 = {
 			isa = PBXGroup;
 			children = (
-				9C6F983325D0C8B4008E4E47 /* LFUCache */,
-				9C6F983025D0C89C008E4E47 /* LRUCache */,
+				9C50178F25D0D0EF00DA3FD1 /* LFUCache */,
+				9C50178C25D0D0E000DA3FD1 /* LRUCache */,
 				9C6F981625D0C86E008E4E47 /* Cache */,
 				9C6F982125D0C86E008E4E47 /* CacheTests */,
 				9C6F981525D0C86E008E4E47 /* Products */,
