@@ -7,14 +7,14 @@
 
 import Foundation
 
-class LRUCache<Key: Hashable, Value> {
+public class LRUCache<Key: Hashable, Value> {
     let capacity: Int
-    var head: Node<Key, Value>
-    var tail: Node<Key, Value>
+    public var head: Node<Key, Value>
+    public var tail: Node<Key, Value>
     var map: [Key: Node<Key, Value>]
-    var size = 0
+    public var size = 0
     
-    init(_ capacity: Int) {
+    public init(_ capacity: Int) {
         self.capacity = capacity
         head = Node<Key, Value>()
         tail = Node<Key, Value>()
@@ -31,20 +31,6 @@ class LRUCache<Key: Hashable, Value> {
         return nil
     }
     
-    func putNode(_ node: Node<Key, Value>) {
-        if
-            let key = node.payload?.key,
-            let oldNode = map[key] {
-            remove(oldNode)
-        }
-        add(node)
-        if size > capacity {
-            if let discard = head.next {
-                remove(discard)
-            }
-        }
-    }
-    
     func put(_ key: Key, _ value: Value) {
         let payload = Payload(key, value)
         let node = Node<Key, Value>(payload)
@@ -59,7 +45,7 @@ class LRUCache<Key: Hashable, Value> {
         }
     }
     
-    func remove(_ node: Node<Key, Value>) {
+    public func remove(_ node: Node<Key, Value>) {
         let prev = node.prev
         let next = node.next
         prev?.next = next
@@ -81,5 +67,19 @@ class LRUCache<Key: Hashable, Value> {
     func moveToTail(_ node: Node<Key, Value>) {
         remove(node)
         add(node)
+    }
+    
+    public func putNode(_ node: Node<Key, Value>) {
+        if
+            let key = node.payload?.key,
+            let oldNode = map[key] {
+            remove(oldNode)
+        }
+        add(node)
+        if size > capacity {
+            if let discard = head.next {
+                remove(discard)
+            }
+        }
     }
 }

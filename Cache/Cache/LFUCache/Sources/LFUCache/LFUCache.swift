@@ -1,17 +1,18 @@
 //
 //  LFUCache.swift
-//  LRUCache
+//  LFUCache
 //
 //  Created by Poorwa Hirve on 2/7/21.
 //
 
 import Foundation
+import LRUCache
 
 class LFUNode<Key, Value> : Node<Key, Value> {
     var frequency = 1
 }
 
-public class LFUCache<Key: Hashable, Value> {
+class LFUCache<Key: Hashable, Value> {
     let capacity: Int
     var countMap: [Int: LRUCache<Key, Value>]
     var map: [Key: LFUNode<Key, Value>]

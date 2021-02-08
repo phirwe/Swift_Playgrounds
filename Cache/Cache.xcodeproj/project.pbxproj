@@ -7,98 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C30ECF525D07C540038EB7B /* LRUCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C30ECEB25D07C530038EB7B /* LRUCache.framework */; };
-		9C30ECFA25D07C540038EB7B /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */; };
-		9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416D925D07D3F00171B49 /* LRUCache.swift */; };
-		9CC416DE25D07D9000171B49 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416DD25D07D9000171B49 /* Node.swift */; };
-		9CD46EC825D0AF4C00F5D408 /* LFUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */; };
-		9CD46ECC25D0B79900F5D408 /* LFUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */; };
+		9C6F981E25D0C86E008E4E47 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6F981425D0C86E008E4E47 /* Cache.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C30ECF625D07C540038EB7B /* PBXContainerItemProxy */ = {
+		9C6F981F25D0C86E008E4E47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C30ECE225D07C530038EB7B /* Project object */;
+			containerPortal = 9C6F980B25D0C86E008E4E47 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9C30ECEA25D07C530038EB7B;
-			remoteInfo = LRUCache;
+			remoteGlobalIDString = 9C6F981325D0C86E008E4E47;
+			remoteInfo = Cache;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C30ECEB25D07C530038EB7B /* LRUCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LRUCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C30ECEF25D07C530038EB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C30ECF425D07C530038EB7B /* LRUCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRUCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
-		9C30ECFB25D07C540038EB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CC416D925D07D3F00171B49 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
-		9CC416DD25D07D9000171B49 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFUCache.swift; sourceTree = "<group>"; };
-		9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFUCacheTests.swift; sourceTree = "<group>"; };
+		9C6F981425D0C86E008E4E47 /* Cache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6F981825D0C86E008E4E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6F981D25D0C86E008E4E47 /* CacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6F982425D0C86E008E4E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6F983025D0C89C008E4E47 /* LRUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LRUCache; sourceTree = "<group>"; };
+		9C6F983325D0C8B4008E4E47 /* LFUCache */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LFUCache; path = Cache/LFUCache; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C30ECE825D07C530038EB7B /* Frameworks */ = {
+		9C6F981125D0C86E008E4E47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C30ECF125D07C530038EB7B /* Frameworks */ = {
+		9C6F981A25D0C86E008E4E47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C30ECF525D07C540038EB7B /* LRUCache.framework in Frameworks */,
+				9C6F981E25D0C86E008E4E47 /* Cache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C30ECE125D07C530038EB7B = {
+		9C6F980A25D0C86E008E4E47 = {
 			isa = PBXGroup;
 			children = (
-				9C30ECED25D07C530038EB7B /* LRUCache */,
-				9C30ECF825D07C540038EB7B /* LRUCacheTests */,
-				9C30ECEC25D07C530038EB7B /* Products */,
+				9C6F983325D0C8B4008E4E47 /* LFUCache */,
+				9C6F983025D0C89C008E4E47 /* LRUCache */,
+				9C6F981625D0C86E008E4E47 /* Cache */,
+				9C6F982125D0C86E008E4E47 /* CacheTests */,
+				9C6F981525D0C86E008E4E47 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9C30ECEC25D07C530038EB7B /* Products */ = {
+		9C6F981525D0C86E008E4E47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C30ECEB25D07C530038EB7B /* LRUCache.framework */,
-				9C30ECF425D07C530038EB7B /* LRUCacheTests.xctest */,
+				9C6F981425D0C86E008E4E47 /* Cache.framework */,
+				9C6F981D25D0C86E008E4E47 /* CacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C30ECED25D07C530038EB7B /* LRUCache */ = {
+		9C6F981625D0C86E008E4E47 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				9CC416D925D07D3F00171B49 /* LRUCache.swift */,
-				9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */,
-				9C30ECEF25D07C530038EB7B /* Info.plist */,
-				9CC416DD25D07D9000171B49 /* Node.swift */,
+				9C6F981825D0C86E008E4E47 /* Info.plist */,
 			);
-			path = LRUCache;
+			path = Cache;
 			sourceTree = "<group>";
 		};
-		9C30ECF825D07C540038EB7B /* LRUCacheTests */ = {
+		9C6F982125D0C86E008E4E47 /* CacheTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */,
-				9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */,
-				9C30ECFB25D07C540038EB7B /* Info.plist */,
+				9C6F982425D0C86E008E4E47 /* Info.plist */,
 			);
-			path = LRUCacheTests;
+			path = CacheTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9C30ECE625D07C530038EB7B /* Headers */ = {
+		9C6F980F25D0C86E008E4E47 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,61 +97,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9C30ECEA25D07C530038EB7B /* LRUCache */ = {
+		9C6F981325D0C86E008E4E47 /* Cache */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C30ECFF25D07C540038EB7B /* Build configuration list for PBXNativeTarget "LRUCache" */;
+			buildConfigurationList = 9C6F982825D0C86E008E4E47 /* Build configuration list for PBXNativeTarget "Cache" */;
 			buildPhases = (
-				9C30ECE625D07C530038EB7B /* Headers */,
-				9C30ECE725D07C530038EB7B /* Sources */,
-				9C30ECE825D07C530038EB7B /* Frameworks */,
-				9C30ECE925D07C530038EB7B /* Resources */,
+				9C6F980F25D0C86E008E4E47 /* Headers */,
+				9C6F981025D0C86E008E4E47 /* Sources */,
+				9C6F981125D0C86E008E4E47 /* Frameworks */,
+				9C6F981225D0C86E008E4E47 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LRUCache;
-			productName = LRUCache;
-			productReference = 9C30ECEB25D07C530038EB7B /* LRUCache.framework */;
+			name = Cache;
+			productName = Cache;
+			productReference = 9C6F981425D0C86E008E4E47 /* Cache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C30ECF325D07C530038EB7B /* LRUCacheTests */ = {
+		9C6F981C25D0C86E008E4E47 /* CacheTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C30ED0225D07C540038EB7B /* Build configuration list for PBXNativeTarget "LRUCacheTests" */;
+			buildConfigurationList = 9C6F982B25D0C86E008E4E47 /* Build configuration list for PBXNativeTarget "CacheTests" */;
 			buildPhases = (
-				9C30ECF025D07C530038EB7B /* Sources */,
-				9C30ECF125D07C530038EB7B /* Frameworks */,
-				9C30ECF225D07C530038EB7B /* Resources */,
+				9C6F981925D0C86E008E4E47 /* Sources */,
+				9C6F981A25D0C86E008E4E47 /* Frameworks */,
+				9C6F981B25D0C86E008E4E47 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9C30ECF725D07C540038EB7B /* PBXTargetDependency */,
+				9C6F982025D0C86E008E4E47 /* PBXTargetDependency */,
 			);
-			name = LRUCacheTests;
-			productName = LRUCacheTests;
-			productReference = 9C30ECF425D07C530038EB7B /* LRUCacheTests.xctest */;
+			name = CacheTests;
+			productName = CacheTests;
+			productReference = 9C6F981D25D0C86E008E4E47 /* CacheTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C30ECE225D07C530038EB7B /* Project object */ = {
+		9C6F980B25D0C86E008E4E47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					9C30ECEA25D07C530038EB7B = {
+					9C6F981325D0C86E008E4E47 = {
 						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
 					};
-					9C30ECF325D07C530038EB7B = {
+					9C6F981C25D0C86E008E4E47 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 9C30ECE525D07C530038EB7B /* Build configuration list for PBXProject "LRUCache" */;
+			buildConfigurationList = 9C6F980E25D0C86E008E4E47 /* Build configuration list for PBXProject "Cache" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -170,26 +158,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 9C30ECE125D07C530038EB7B;
-			productRefGroup = 9C30ECEC25D07C530038EB7B /* Products */;
+			mainGroup = 9C6F980A25D0C86E008E4E47;
+			productRefGroup = 9C6F981525D0C86E008E4E47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C30ECEA25D07C530038EB7B /* LRUCache */,
-				9C30ECF325D07C530038EB7B /* LRUCacheTests */,
+				9C6F981325D0C86E008E4E47 /* Cache */,
+				9C6F981C25D0C86E008E4E47 /* CacheTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9C30ECE925D07C530038EB7B /* Resources */ = {
+		9C6F981225D0C86E008E4E47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C30ECF225D07C530038EB7B /* Resources */ = {
+		9C6F981B25D0C86E008E4E47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,37 +187,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C30ECE725D07C530038EB7B /* Sources */ = {
+		9C6F981025D0C86E008E4E47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD46EC825D0AF4C00F5D408 /* LFUCache.swift in Sources */,
-				9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */,
-				9CC416DE25D07D9000171B49 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C30ECF025D07C530038EB7B /* Sources */ = {
+		9C6F981925D0C86E008E4E47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD46ECC25D0B79900F5D408 /* LFUCacheTests.swift in Sources */,
-				9C30ECFA25D07C540038EB7B /* LRUCacheTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9C30ECF725D07C540038EB7B /* PBXTargetDependency */ = {
+		9C6F982025D0C86E008E4E47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C30ECEA25D07C530038EB7B /* LRUCache */;
-			targetProxy = 9C30ECF625D07C540038EB7B /* PBXContainerItemProxy */;
+			target = 9C6F981325D0C86E008E4E47 /* Cache */;
+			targetProxy = 9C6F981F25D0C86E008E4E47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9C30ECFD25D07C540038EB7B /* Debug */ = {
+		9C6F982625D0C86E008E4E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +276,7 @@
 			};
 			name = Debug;
 		};
-		9C30ECFE25D07C540038EB7B /* Release */ = {
+		9C6F982725D0C86E008E4E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,48 +334,45 @@
 			};
 			name = Release;
 		};
-		9C30ED0025D07C540038EB7B /* Debug */ = {
+		9C6F982925D0C86E008E4E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LRUCache/Info.plist;
+				INFOPLIST_FILE = Cache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.workday.LRUCache;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poorwa.Cache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9C30ED0125D07C540038EB7B /* Release */ = {
+		9C6F982A25D0C86E008E4E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LRUCache/Info.plist;
+				INFOPLIST_FILE = Cache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.workday.LRUCache;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poorwa.Cache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -400,36 +380,34 @@
 			};
 			name = Release;
 		};
-		9C30ED0325D07C540038EB7B /* Debug */ = {
+		9C6F982C25D0C86E008E4E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LRUCacheTests/Info.plist;
+				INFOPLIST_FILE = CacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.workday.LRUCacheTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poorwa.CacheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9C30ED0425D07C540038EB7B /* Release */ = {
+		9C6F982D25D0C86E008E4E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LRUCacheTests/Info.plist;
+				INFOPLIST_FILE = CacheTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.workday.LRUCacheTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poorwa.CacheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,34 +417,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C30ECE525D07C530038EB7B /* Build configuration list for PBXProject "LRUCache" */ = {
+		9C6F980E25D0C86E008E4E47 /* Build configuration list for PBXProject "Cache" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C30ECFD25D07C540038EB7B /* Debug */,
-				9C30ECFE25D07C540038EB7B /* Release */,
+				9C6F982625D0C86E008E4E47 /* Debug */,
+				9C6F982725D0C86E008E4E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C30ECFF25D07C540038EB7B /* Build configuration list for PBXNativeTarget "LRUCache" */ = {
+		9C6F982825D0C86E008E4E47 /* Build configuration list for PBXNativeTarget "Cache" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C30ED0025D07C540038EB7B /* Debug */,
-				9C30ED0125D07C540038EB7B /* Release */,
+				9C6F982925D0C86E008E4E47 /* Debug */,
+				9C6F982A25D0C86E008E4E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C30ED0225D07C540038EB7B /* Build configuration list for PBXNativeTarget "LRUCacheTests" */ = {
+		9C6F982B25D0C86E008E4E47 /* Build configuration list for PBXNativeTarget "CacheTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C30ED0325D07C540038EB7B /* Debug */,
-				9C30ED0425D07C540038EB7B /* Release */,
+				9C6F982C25D0C86E008E4E47 /* Debug */,
+				9C6F982D25D0C86E008E4E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C30ECE225D07C530038EB7B /* Project object */;
+	rootObject = 9C6F980B25D0C86E008E4E47 /* Project object */;
 }

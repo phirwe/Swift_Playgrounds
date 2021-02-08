@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import LRUCache
+@testable import LFUCache
 
 final class LFUCacheTests: XCTestCase {
     fileprivate var cache: IntLFUCache!
