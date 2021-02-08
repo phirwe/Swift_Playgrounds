@@ -1,6 +1,6 @@
 //
-//  LRUCacheTests.swift
-//  LRUCacheTests
+//  LFUCacheTests.swift
+//  LFUCacheTests
 //
 //  Created by Poorwa Hirve on 2/7/21.
 //
@@ -8,11 +8,11 @@
 import XCTest
 @testable import LRUCache
 
-final class LRUCacheTests: XCTestCase {
-    fileprivate var cache: IntLRUCache!
+final class LFUCacheTests: XCTestCase {
+    fileprivate var cache: IntLFUCache!
     
     override func setUp() {
-        cache = IntLRUCache(2)
+        cache = IntLFUCache(2)
         super.setUp()
     }
     
@@ -33,13 +33,13 @@ final class LRUCacheTests: XCTestCase {
         }
         guard
             let command = commands.first,
-            command == "LRUCache",
+            command == "LFUCache",
             let _ = params.first
         else {
             XCTAssertThrowsError("Could not get capacity")
             return nil
         }
-        cache = IntLRUCache(params[0][0])
+        cache = IntLFUCache(params[0][0])
         var cacheMethods = Array<CacheMethod>()
         for (i, command) in commands.enumerated() {
             if i == 0 {
@@ -57,9 +57,6 @@ final class LRUCacheTests: XCTestCase {
         return cacheMethods
     }
     
-//    ["LFUCache","put","put","get","put","get","get","put","get","get","get"]
-//    [[2],[1,1],[2,2],[1],[3,3],[2],[3],[4,4],[1],[3],[4]]
-    
     private func cacheMethod(method: CacheMethod) -> Int? {
         switch method {
         case .get(let key):
@@ -70,47 +67,14 @@ final class LRUCacheTests: XCTestCase {
         }
     }
     
-    func testLRU() {
-        let commands = ["LRUCache","put","put","get","put","get","put","get","get","get"]
-        let params = [[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]
+    func testLFU() {
+        let commands = ["LFUCache","put","put","get","put","get","get","put","get","get","get"]
+        let params = [[2],[1,1],[2,2],[1],[3,3],[2],[3],[4,4],[1],[3],[4]]
         
         let methods = try? performCache(commands, params)
         XCTAssertNotNil(methods)
         
-        let expectedResult = [
-            nil,
-            nil,
-            1,
-            nil,
-            -1,
-            nil,
-            -1,
-            3,
-            4
-        ]
-        
-        let result = methods?.map({ method in
-            cacheMethod(method: method)
-        })
-        
-        XCTAssertEqual(result, expectedResult)
-        
-    }
-    
-    func testLRUCapacity1() {
-        let commands = ["LRUCache","put","get","put","get","get"]
-        let params = [[1],[2,1],[2],[3,2],[2],[3]]
-        
-        let methods = try? performCache(commands, params)
-        XCTAssertNotNil(methods)
-        
-        let expectedResult = [
-            nil,
-            1,
-            nil,
-            -1,
-            2
-        ]
+        let expectedResult = [nil, nil, 1, nil, -1, 3, nil, -1, 3, 4]
         
         let result = methods?.map({ method in
             cacheMethod(method: method)
@@ -119,62 +83,43 @@ final class LRUCacheTests: XCTestCase {
         XCTAssertEqual(result, expectedResult)
     }
     
-    func testLRUCapacity2() {
-        let commands = ["LRUCache","put","put","put","put","get","get"]
-        let params = [[2],[2,1],[1,1],[2,3],[4,1],[1],[2]]
-        
-        let expectedResult = [
-            nil,
-            nil,
-            nil,
-            nil,
-            -1,
-            3
-        ]
+    func testLFU2() {
+        let commands = ["LFUCache","put","put","put","put","get"]
+        let params = [[2],[3,1],[2,1],[2,2],[4,4],[2]]
         
         let methods = try? performCache(commands, params)
         XCTAssertNotNil(methods)
-
+        
+        let expectedResult = [nil,nil,nil,nil,2]
+        
         let result = methods?.map({ method in
             cacheMethod(method: method)
         })
+        
         XCTAssertEqual(result, expectedResult)
     }
     
-    func testLRUCapacity3() {
-        let commands = ["LRUCache","put","put","put","put","get","get","get","get","put","get","get","get","get","get"]
-        let params = [[3],[1,1],[2,2],[3,3],[4,4],[4],[3],[2],[1],[5,5],[1],[2],[3],[4],[5]]
-        
-        let expectedResult = [
-            nil,
-            nil,
-            nil,
-            nil,
-            4,
-            3,
-            2,
-            -1,
-            nil,
-            -1,
-            2,
-            3,
-            -1,
-            5
-        ]
+    func testLFU3() {
+        let commands = ["LFUCache","put","get"]
+        let params = [[0],[0,0],[0]]
         
         let methods = try? performCache(commands, params)
         XCTAssertNotNil(methods)
-
+        
+        let expectedResult = [nil,-1]
+        
         let result = methods?.map({ method in
             cacheMethod(method: method)
         })
+        
         XCTAssertEqual(result, expectedResult)
+        
     }
 }
 
-fileprivate class IntLRUCache: LRUCache<Int, Int> {
-    override func get(_ key: Int) -> Int? {
+fileprivate class IntLFUCache: LFUCache<Int, Int> {
+    override func get(_ key: Int) -> Int {
         let value = super.get(key)
-        return value != nil ? value : -1
+        return value ?? -1
     }
 }

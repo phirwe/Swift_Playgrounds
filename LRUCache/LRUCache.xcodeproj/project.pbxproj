@@ -11,6 +11,8 @@
 		9C30ECFA25D07C540038EB7B /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */; };
 		9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416D925D07D3F00171B49 /* LRUCache.swift */; };
 		9CC416DE25D07D9000171B49 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC416DD25D07D9000171B49 /* Node.swift */; };
+		9CD46EC825D0AF4C00F5D408 /* LFUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */; };
+		9CD46ECC25D0B79900F5D408 /* LFUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		9C30ECFB25D07C540038EB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC416D925D07D3F00171B49 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 		9CC416DD25D07D9000171B49 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFUCache.swift; sourceTree = "<group>"; };
+		9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFUCacheTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC416D925D07D3F00171B49 /* LRUCache.swift */,
+				9CD46EC725D0AF4C00F5D408 /* LFUCache.swift */,
 				9C30ECEF25D07C530038EB7B /* Info.plist */,
 				9CC416DD25D07D9000171B49 /* Node.swift */,
 			);
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9C30ECF925D07C540038EB7B /* LRUCacheTests.swift */,
+				9CD46ECB25D0B79900F5D408 /* LFUCacheTests.swift */,
 				9C30ECFB25D07C540038EB7B /* Info.plist */,
 			);
 			path = LRUCacheTests;
@@ -197,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD46EC825D0AF4C00F5D408 /* LFUCache.swift in Sources */,
 				9CC416DA25D07D3F00171B49 /* LRUCache.swift in Sources */,
 				9CC416DE25D07D9000171B49 /* Node.swift in Sources */,
 			);
@@ -206,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD46ECC25D0B79900F5D408 /* LFUCacheTests.swift in Sources */,
 				9C30ECFA25D07C540038EB7B /* LRUCacheTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,6 +31,20 @@ class LRUCache<Key: Hashable, Value> {
         return nil
     }
     
+    func putNode(_ node: Node<Key, Value>) {
+        if
+            let key = node.payload?.key,
+            let oldNode = map[key] {
+            remove(oldNode)
+        }
+        add(node)
+        if size > capacity {
+            if let discard = head.next {
+                remove(discard)
+            }
+        }
+    }
+    
     func put(_ key: Key, _ value: Value) {
         let payload = Payload(key, value)
         let node = Node<Key, Value>(payload)
