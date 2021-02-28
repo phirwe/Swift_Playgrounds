@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C36AEA525DB234E00C8F219 /* PhoneNumberToLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AEA425DB234E00C8F219 /* PhoneNumberToLetter.swift */; };
+		9C36AEA925DB240200C8F219 /* ValidSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36AEA825DB240200C8F219 /* ValidSudoku.swift */; };
+		9C606C1625DA2105008609A3 /* RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C606C1525DA2105008609A3 /* RotateImage.swift */; };
+		9C606C1A25DA2706008609A3 /* RotatedArraySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C606C1925DA2706008609A3 /* RotatedArraySearch.swift */; };
+		9C606C1E25DA28C5008609A3 /* IntToRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C606C1D25DA28C5008609A3 /* IntToRoman.swift */; };
+		9C606C2225DAF2A0008609A3 /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C606C2125DAF2A0008609A3 /* ValidParentheses.swift */; };
+		9CA4F67825D8A50100E27988 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4F67725D8A50100E27988 /* Factory.swift */; };
+		9CA4F67C25D8A7DC00E27988 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4F67B25D8A7DC00E27988 /* FactoryTests.swift */; };
+		9CA4F68225D8A95F00E27988 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4F68125D8A95F00E27988 /* Builder.swift */; };
 		9CDEF29325D77E2A00F96499 /* Get_Swifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDEF28925D77E2900F96499 /* Get_Swifty.framework */; };
 		9CDEF29825D77E2A00F96499 /* Get_SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEF29725D77E2A00F96499 /* Get_SwiftyTests.swift */; };
 		9CDEF2A725D77EBA00F96499 /* Mutating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEF2A625D77EBA00F96499 /* Mutating.swift */; };
@@ -27,6 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C36AEA425DB234E00C8F219 /* PhoneNumberToLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberToLetter.swift; sourceTree = "<group>"; };
+		9C36AEA825DB240200C8F219 /* ValidSudoku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidSudoku.swift; sourceTree = "<group>"; };
+		9C606C1525DA2105008609A3 /* RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImage.swift; sourceTree = "<group>"; };
+		9C606C1925DA2706008609A3 /* RotatedArraySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedArraySearch.swift; sourceTree = "<group>"; };
+		9C606C1D25DA28C5008609A3 /* IntToRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntToRoman.swift; sourceTree = "<group>"; };
+		9C606C2125DAF2A0008609A3 /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
+		9CA4F67725D8A50100E27988 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		9CA4F67B25D8A7DC00E27988 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
+		9CA4F68125D8A95F00E27988 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		9CDEF28925D77E2900F96499 /* Get_Swifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Get_Swifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CDEF28D25D77E2900F96499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CDEF29225D77E2A00F96499 /* Get SwiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Get SwiftyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +103,14 @@
 				9CDEF2A625D77EBA00F96499 /* Mutating.swift */,
 				9CDEF2BA25D785EF00F96499 /* RetainCycles.swift */,
 				9CDEF2BE25D7A14600F96499 /* OOPConcepts.swift */,
+				9CA4F67725D8A50100E27988 /* Factory.swift */,
+				9CA4F68125D8A95F00E27988 /* Builder.swift */,
+				9C606C1525DA2105008609A3 /* RotateImage.swift */,
+				9C606C1925DA2706008609A3 /* RotatedArraySearch.swift */,
+				9C606C1D25DA28C5008609A3 /* IntToRoman.swift */,
+				9C606C2125DAF2A0008609A3 /* ValidParentheses.swift */,
+				9C36AEA425DB234E00C8F219 /* PhoneNumberToLetter.swift */,
+				9C36AEA825DB240200C8F219 /* ValidSudoku.swift */,
 			);
 			path = "Get Swifty";
 			sourceTree = "<group>";
@@ -95,6 +121,7 @@
 				9CDEF29725D77E2A00F96499 /* Get_SwiftyTests.swift */,
 				9CDEF2AC25D77FD500F96499 /* MutatingTests.swift */,
 				9CDEF2C225D7AB7F00F96499 /* OOPConceptTests.swift */,
+				9CA4F67B25D8A7DC00E27988 /* FactoryTests.swift */,
 				9CDEF29925D77E2A00F96499 /* Info.plist */,
 			);
 			path = "Get SwiftyTests";
@@ -208,9 +235,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C606C1625DA2105008609A3 /* RotateImage.swift in Sources */,
 				9CDEF2A725D77EBA00F96499 /* Mutating.swift in Sources */,
 				9CDEF2BF25D7A14600F96499 /* OOPConcepts.swift in Sources */,
+				9C36AEA925DB240200C8F219 /* ValidSudoku.swift in Sources */,
 				9CDEF2BB25D785EF00F96499 /* RetainCycles.swift in Sources */,
+				9C36AEA525DB234E00C8F219 /* PhoneNumberToLetter.swift in Sources */,
+				9C606C2225DAF2A0008609A3 /* ValidParentheses.swift in Sources */,
+				9CA4F67825D8A50100E27988 /* Factory.swift in Sources */,
+				9C606C1A25DA2706008609A3 /* RotatedArraySearch.swift in Sources */,
+				9C606C1E25DA28C5008609A3 /* IntToRoman.swift in Sources */,
+				9CA4F68225D8A95F00E27988 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA4F67C25D8A7DC00E27988 /* FactoryTests.swift in Sources */,
 				9CDEF2AD25D77FD500F96499 /* MutatingTests.swift in Sources */,
 				9CDEF2C325D7AB7F00F96499 /* OOPConceptTests.swift in Sources */,
 				9CDEF29825D77E2A00F96499 /* Get_SwiftyTests.swift in Sources */,
